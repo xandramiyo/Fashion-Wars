@@ -22,9 +22,14 @@ export default function LoginForm({ setUser }) {
       // payload of the JSON Web Token (JWT)
       const user = await usersService.login(credentials);
       setUser(user);
-    } catch {
-      setError('Log In Failed - Try Again');
+    } catch (err) {
+      if (err.response && err.response.status === 401) {
+      setError('Invalid email or password. Please try again.');
+    } else {
+      setError('Something went wrong. Please try again later.')
+      console.log(err)
     }
+  }
   }
 
   return (
@@ -40,5 +45,5 @@ export default function LoginForm({ setUser }) {
       </div>
       <p className="error-message">&nbsp;{error}</p>
     </div>
-  );
-}
+  )
+  }

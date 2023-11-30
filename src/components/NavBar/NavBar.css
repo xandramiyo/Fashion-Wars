@@ -1,0 +1,37 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	background-color: gray;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav > div{
+	margin: .4rem;
+}
+
+.leftNav {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.rightNav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.leftNav > *, 
+.rightNav > *{
+	margin: .3rem;
+}
+
+.logo {
+	width: 2rem;
+}
