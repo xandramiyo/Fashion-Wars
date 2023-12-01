@@ -12,15 +12,15 @@ export default function App() {
   const [ user, setUser ] = useState(getUser())
 
   return (
-    <main className="App">
-        <>
-          <NavBar user={user} setUser={setUser} />
-          <Routes>
-            <Route path="/" element={<HomePage />}/>
-            <Route path="/submissions" element={<SubmissionsPage />} />
-            <Route path="/auth" element={<AuthPage setUser={setUser}/> } />
-          </Routes>
-        </>
-    </main>
+    <>
+      <NavBar user={user} setUser={setUser} />
+      <main className="App">
+        <Routes>
+          <Route path="/" element={<HomePage />}/>
+          <Route path="/submissions" element={<SubmissionsPage />} />
+          <Route path="/auth" element={<AuthPage setUser={setUser}/> } />
+        </Routes>
+      </main>
+    </>
   );
 }
