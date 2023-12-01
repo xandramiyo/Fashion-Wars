@@ -4,10 +4,6 @@
 	display: flex;
 }
 
-.lb-ctr > div {
-
-}
-
 .filter-ctr {
 	background-color: grey;
 	border-radius: 5%;
@@ -50,11 +46,12 @@ input {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
+	height: 25rem;
 }
 
 .card-img {
 	border-radius: 6%;
 	/* maybe a better way to size the cards? */
-	height: 15rem;
+	/* object-fit: contain; */
+	max-height: 25rem;
 }

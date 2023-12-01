@@ -1,5 +1,5 @@
 import './SubmissionsPage.css'
-import placeholder from '../../images/youknow.png'
+import placeholder from '../../images/place.png'
 import icon from '../../images/logo.png'
 import { useState } from 'react'
 
