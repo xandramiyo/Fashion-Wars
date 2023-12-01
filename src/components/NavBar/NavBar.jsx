@@ -13,13 +13,13 @@ export default function NavBar({ user, setUser }) {
 
     return (
         <nav>
-            <div className='leftNav'>
+            <div className='left-nav'>
                 <Link to="/">
                     <img src={logo} className="logo" />
                 </Link>
-                <Link to="/submissions">Take A Look</Link>
+                <Link to="/submissions">Lookbook</Link>
             </div>
-            <div className="rightNav">
+            <div className="right-nav">
                 {
                     user ?
                     <>

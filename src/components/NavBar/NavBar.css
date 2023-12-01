@@ -15,19 +15,19 @@ nav > div{
 	margin: .4rem;
 }
 
-.leftNav {
+.left-nav {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 }
 
-.rightNav {
+.right-nav {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
 
-.leftNav > *, 
+.left-nav > *, 
 .rightNav > *{
 	margin: .3rem;
 }

@@ -1,26 +1,32 @@
-import { Link } from 'react-router-dom'
+import './AuthPage.css'
+
 import SignUpForm from '../../components/SignUpForm/SignUpForm'
 import LoginForm from '../../components/LoginForm/LoginForm'
 import { useState } from 'react'
 
-import HomePage from "../HomePage/HomePage"
+export default function AuthPage({ setUser }) {
+    const [showSignUp, setShowSignUp] = useState(false)
 
-export default function AuthPage({ user, setUser }) {
+    function toggle() {
+        setShowSignUp(!showSignUp)
+    }
+
     return (
         <>
-            <>
-            </>
-            <main>
-                {
-                    user ?
-                    <Link to="/" />
-                    :
-                    <>
-                        <SignUpForm setUser={setUser} />
-                        <LoginForm setUser={setUser} />
-                        <a></a>
-                    </>
-                }
+            <main className="reg-main">
+                <div className="carousel">
+                    "placeholder"
+                </div>
+                <div className='form-container'>
+                    <h3>{ showSignUp ? "Sign Up" : "Log In" }</h3>
+
+                    { showSignUp ? ( 
+                        <SignUpForm setUser={setUser} /> 
+                    ) : ( 
+                        <LoginForm setUser={setUser} /> 
+                    )}
+                    <a href="#" onClick={toggle} className="dark-text"> { showSignUp ? "Already Have an account? Log in Here!" : "Don't Have An Account? Sign Up Here!" } </a>
+                </div>
             </main>
         </>
     )

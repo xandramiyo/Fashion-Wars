@@ -22,7 +22,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--tan-4);
-  padding: 2vmin;
+  padding: 1rem 2rem;
   height: 100vh;
 }
 
@@ -152,6 +152,8 @@ button[type="submit"] {
   margin: 1vmin 0 0;
 }
 
+/* --------------------------------- */
+
 a {
   color: white;
   text-decoration: none;
@@ -159,4 +161,14 @@ a {
 
 a:hover {
   color: #A52422;
+}
+
+.dark-text {
+  color: black;
+}
+
+h1 {
+  border-left: 4px solid red;
+  padding: .5rem;
+  margin: 2rem 0rem;
 }

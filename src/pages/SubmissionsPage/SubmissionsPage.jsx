@@ -2,7 +2,7 @@ export default function SubmissionsPage() {
 
     return (
         <>
-            <h1>Submissions</h1>
+            <h1>Lookbook</h1>
         </>
     )
 }
