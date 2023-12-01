@@ -25,7 +25,6 @@ export default function SignUpForm( {setUser} ) {
     try {
       const user = await signUp(credentials)
       setUser(user)
-      console.log('navigate')
       // return home
       navigate(-1)
     } catch(error) {

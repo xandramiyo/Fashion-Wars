@@ -26,6 +26,7 @@ export default function LoginForm({ setUser }) {
       const user = await usersService.login(credentials);
       setUser(user);
       // return to previous page
+      console.log(navigate)
       navigate(-1)
     } catch (err) {
       if (err.response && err.response.status === 401) {
