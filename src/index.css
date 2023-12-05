@@ -158,7 +158,8 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+.user-menu:hover {
   color: #A52422;
 }
 

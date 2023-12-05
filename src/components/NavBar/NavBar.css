@@ -36,3 +36,31 @@ nav > div{
 .logo {
 	width: 2rem;
 }
+
+.user-nav {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	font-weight: 200;
+	font-size: 1rem;
+}
+
+.user-dd {
+	position: absolute;
+	top: 3.6rem;
+	right: 3rem;
+}
+
+.user-dd::before {
+	content: '';
+	position: absolute;
+	top: -.5rem;
+	right: 1.5rem;
+	width: 1rem;
+	height: 1rem;
+	transform: rotate(45deg);
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	border-radius: 10%;
+}
