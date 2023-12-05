@@ -39,7 +39,7 @@ export default function NavBar({ user, setUser }) {
                 }
             </div>
             {
-                showUserMenu && <UserDropDown />
+                showUserMenu && <UserDropDown user={user} setUser={setUser} />
             }
             
         </nav>
