@@ -14,8 +14,12 @@ export default function UserDropDown({setUser, showUserMenu}) {
 		<div className="user-dd">
 			<ul className="user-dd-options">
 				<li>Profile</li>
-				<li>Liked Looks</li>
-				<li>Settings</li>
+				<li>
+					<Link to="/liked" onClick={showUserMenu}>Liked Looks</Link>
+				</li>
+				<li>
+					<Link to="/settings" onClick={showUserMenu}>Settings</Link>
+				</li>
 				<li>
 					<Link to="" onClick={handleLogOut}>Log Out</Link>
 				</li>
