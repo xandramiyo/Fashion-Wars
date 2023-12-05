@@ -2,11 +2,12 @@ import './UserDropDown.css'
 import { Link } from 'react-router-dom'
 import * as userService from '../../utilities/users-service' 
 
-export default function UserDropDown({user, setUser}) {
+export default function UserDropDown({setUser, showUserMenu}) {
 	
 	function handleLogOut() {
         userService.logOut()
         setUser(null)
+		showUserMenu()
     }
 
 	return (

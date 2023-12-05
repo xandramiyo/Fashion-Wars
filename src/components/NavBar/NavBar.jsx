@@ -2,8 +2,6 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './NavBar.css'
 import logo from '../../images/logo.png'
-
-import * as userService from '../../utilities/users-service' 
 import UserDropDown from '../UserDropDown/UserDropDown'
 
 export default function NavBar({ user, setUser }) {
@@ -12,11 +10,6 @@ export default function NavBar({ user, setUser }) {
 
     function openUserMenu() {
         setshowUserMenu((prev) => !prev)
-    }
-
-    function handleLogOut() {
-        userService.logOut()
-        setUser(null)
     }
 
     return (
@@ -32,14 +25,13 @@ export default function NavBar({ user, setUser }) {
                     user ?
                     <>
                     <button className="user-nav" onClick={openUserMenu}>{user.name}</button>
-                    {/* <Link to="" onClick={handleLogOut}>Log Out</Link> */}
                     </>
                     :
                     <Link to="/auth">Log In</Link>
                 }
             </div>
             {
-                showUserMenu && <UserDropDown user={user} setUser={setUser} />
+                showUserMenu && <UserDropDown setUser={setUser} showUserMenu={showUserMenu}/>
             }
             
         </nav>
