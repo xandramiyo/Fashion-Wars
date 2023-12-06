@@ -16,15 +16,15 @@ export default function NavBar({ user, setUser }) {
         <nav>
             <div className='left-nav'>
                 <Link to="/">
-                    <img src={logo} className="logo" />
+                    <img src={logo} id="logo" />
                 </Link>
                 <Link to="/submissions">Lookbook</Link>
             </div>
-            <div className="right-nav" style={{ margin:'.3rem' }}>
+            <div className="right-nav">
                 {
                     user ?
                     <>
-                    <button className="user-nav" onClick={openUserMenu}>{user.name}</button>
+                    <button id="user-nav" onClick={openUserMenu}>{user.name}</button>
                     </>
                     :
                     <Link to="/auth">Log In</Link>

@@ -10,6 +10,7 @@ module.exports = {
 async function create(req, res) {
     try {
         const user = await User.create(req.body)
+        // add unique id with nanoid?
         const token = createJWT(user)
         res.json(token)
     } catch(err) {

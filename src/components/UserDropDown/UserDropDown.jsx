@@ -11,8 +11,8 @@ export default function UserDropDown({setUser, showUserMenu}) {
     }
 
 	return (
-		<div className="user-dd">
-			<ul className="user-dd-options">
+		<div id="user-dd">
+			<ul id="user-dd-options">
 				<li>Profile</li>
 				<li>
 					<Link to="/liked" onClick={showUserMenu}>Liked Looks</Link>

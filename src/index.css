@@ -46,6 +46,10 @@ code {
   font-size: smaller;
 }
 
+.flex {
+  display: flex;
+}
+
 .flex-ctr-ctr {
   display: flex;
   justify-content: center;

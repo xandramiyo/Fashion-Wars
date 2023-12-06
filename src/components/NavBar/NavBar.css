@@ -26,6 +26,7 @@ nav > div{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	margin: .3rem;
 }
 
 .left-nav > *, 
@@ -33,11 +34,11 @@ nav > div{
 	margin: .3rem;
 }
 
-.logo {
+#logo {
 	width: 2rem;
 }
 
-.user-nav {
+#user-nav {
 	background: none;
 	border: none;
 	cursor: pointer;
@@ -46,13 +47,13 @@ nav > div{
 	font-size: 1rem;
 }
 
-.user-dd {
+#user-dd {
 	position: absolute;
 	top: 3.6rem;
 	right: 3rem;
 }
 
-.user-dd::before {
+#user-dd::before {
 	content: '';
 	position: absolute;
 	top: -.5rem;

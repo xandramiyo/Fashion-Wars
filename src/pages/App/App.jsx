@@ -23,7 +23,7 @@ export default function App() {
           <Route path="/submissions" element={<SubmissionsPage />} />
           <Route path="/auth" element={<AuthPage setUser={setUser}/> } />
           <Route path="/liked" element={<LikedPage />} />
-          <Route path="/settings" element={<SettingsPage />} />
+          <Route path="/settings" element={<SettingsPage user={user}/>} />
           <Route path="/:username" element={<ProfilePage user={user}/>} />
         </Routes>
       </main>
